@@ -1,0 +1,4 @@
+# Personal / editor files (each project folder has its own .gitignore too)
+.claude/settings.local.json
+.DS_Store
+__pycache__/

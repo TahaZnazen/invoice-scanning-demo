@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Invoice Scanner Demo",
+    "slug": "invoice-scanner-demo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.einvoicing.scannerdemo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.einvoicing.scannerdemo",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Pick invoice photos to scan them.",
+          "cameraPermission": "Scan invoices with the camera."
+        }
+      ],
+      [
+        "react-native-document-scanner-plugin",
+        {
+          "cameraPermission": "Scan invoices with the camera."
+        }
+      ]
+    ],
+    "scheme": "invoicescanner",
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "bea6eca3-5381-44c5-8cf3-4a59f9793f75"
+      }
+    },
+    "owner": "taha_znazen"
+  }
+}

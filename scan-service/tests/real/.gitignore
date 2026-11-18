@@ -1,0 +1,5 @@
+# Real invoice photos contain personal data: keep them out of git.
+*.jpg
+*.jpeg
+*.png
+*.heic
